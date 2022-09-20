@@ -3,14 +3,13 @@
 // To run file: navigate to the correct directory in terminal, $ node code-challenges.js
 
 // Describing your process is required.
-
 // --------------------INSTRUCTOR EXAMPLE: Create the code that determines which of the two strings has more characters. Use the two sets of test variables provided.
 
 // Describe your process:
 
 // Set one:
-const fruit1 = "apple"
-const fruit2 = "banana"
+//const fruit1 = "apple"
+//const fruit2 = "banana"
 // Expected outcome: "banana"
 
 // Set two:
@@ -21,48 +20,123 @@ const fruit2 = "banana"
 // --------------------1) Create the code that determines if a given number is below boiling point, at boiling point, or above boiling point. Boiling point is 212 degrees Fahrenheit. Use the test variables provided below.
 
 // Describe your process:
-
-const temp = 42
+//First, I declare a variable. To do this I will use the let keyword. I name the variable - boilingPoint and assign a value 212 to it.
+//Second, I write a conditional statement to compare my given number with boilingPoint number.
+//Since I have three option in my decision structure, I will use if/else if statement. 
+//I will use console.log to log   `${temp} is below boiling point.` if temp < 212
+                                //`${temp} is at boiling point.` if temp === 212
+                                //`${temp} is above boiling point.` if temp > 212
+//const temp = 42
+//let boilingPoint = 212
+    // if (temp < 212) {
+    //     console.log(`${temp} is below boiling point.`)
+    // } else if (temp === 212) {
+    //     console.log(`${temp} is at boiling point.` )
+    // } else if (temp > 212) {
+    //     console.log(`${temp} is above boiling point.` )
+    // } else {
+    //     console.log("Ooops. Try again")
+    // }
 // Expected output: "42 is below boiling point"
+// Result: work as expected
 
 // const temp = 350
+// let boilingPoint = 212
+//     if (temp < 212) {
+//         console.log(`${temp} is below boiling point.`)
+//     } else if (temp === 212) {
+//         console.log(`${temp} is at boiling point.` )
+//     } else if (temp > 212) {
+//         console.log(`${temp} is above boiling point.` )
+//     } else {
+//         console.log("Ooops. Try again")
+//     }
 // Expected output: "350 is above boiling point"
+// Result: work as expected
 
 // const temp = 212
-// Expected output: "212 is at boiling point"
+// let boilingPoint = 212
+//     if (temp < 212) {
+//         console.log(`${temp} is below boiling point.`)
+//     } else if (temp === 212) {
+//         console.log(`${temp} is at boiling point.` )
+//     } else if (temp > 212) {
+//         console.log(`${temp} is above boiling point.` )
+//     } else {
+//         console.log("Ooops. Try again")
+//     }
+
+    // Expected output: "212 is at boiling point"
+    // Result: work as expected
+
 
 // --------------------2) Create the code that will combine the two arrays and return the length using the test variables provided below.
 
 // Describe your process:
 
-const padres1984WorldSeriesRuns = [2, 5, 2, 2, 4]
-const padres1998WorldSeriesRuns = [6, 3, 5, 3]
+//To complete the task I will use accessor method .concat() first to combine the two arrays.
+//Then, I will use length property to return the number of elements in the array. 
+
+// const padres1984WorldSeriesRuns = [2, 5, 2, 2, 4]
+// const padres1998WorldSeriesRuns = [6, 3, 5, 3]
+// console.log(padres1984WorldSeriesRuns.concat(padres1998WorldSeriesRuns).length)
+
 // Expected output: 9
+//Result: as expected
 
 // --------------------3) Create the code that will reverse the letters of a string using the test variable provided below.
 
 // Describe your process:
+//First, I use .split() method to convert a string into an array and after doing that I will be able to manipulate the items. 
+//Then, I will use .reverse() method to reverse the order of the values in an array.
+//Finaly, I will use .join(" ") method to convert all values in an array to a string again.
+//I console.log it
 
-const currentCohort = "Foxtrot 2022"
+
+
+// const currentCohort = "Foxtrot 2022"
+// console.log(currentCohort.split("").reverse().join(""))
+
 // Expected output: "2202 tortxoF"
+//Result: 2202 tortxoF // It returned without "". Did I do somth wrong?
 
 // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
 // Describe your process:
+//To complete this task I will use a build-in-Method .lastIndexOf() 
+//I put givenValue1 in parentheses as an argument
+//lastly, I use console.log to check a result 
 
-const myNumbers = [13, 34, 42, 5, 5, 10, 27, 42, 10]
-const givenValue1 = 42
+// const myNumbers = [13, 34, 42, 5, 5, 10, 27, 42, 10]
+// const givenValue1 = 42
+
+// console.log(myNumbers.lastIndexOf(givenValue1))
 // Expected output: 7
+// Result: 7. As Expected
 
-const givenValue2 = 10
+///To complete this task I will use a build-in-Method .lastIndexOf() 
+//I put givenValue2 in parentheses as an argument
+//lastly, I use console.log to check a result 
+// const givenValue2 = 10
+// console.log(myNumbers.lastIndexOf(givenValue2))
+
 // Expected output: 8
+//Output: 8. As expected
 
 // --------------------5) Create the code that will sort all the numbers in an array from largest to smallest. Use the test variables provided below.
 
 // Describe your process:
+//to complete this task I will use array buit-in mutator method .sort()
+//In addition, I will use a function that defines a sort order (in our case - from highest to lowest) ((a,b) => b-a)
 
-const sanDiegoSummerTemperatures = [79, 80, 72, 73, 82, 77, 76]
+// const sanDiegoSummerTemperatures = [79, 80, 72, 73, 82, 77, 76]
+// sanDiegoSummerTemperatures.sort((a,b) => b-a)
+// console.log(sanDiegoSummerTemperatures)
 // Expected output: [82, 80, 79, 77, 76, 73, 72]
+//Output: as expected
 
 const sanDiegoWinterTemperatures = [59, 68, 62, 59, 66, 67, 66]
+sanDiegoWinterTemperatures.sort((a,b) => b-a)
+console.log(sanDiegoWinterTemperatures)
 // Expected output: [68, 67, 66, 66, 62, 59, 59]
+//Output: as expected
