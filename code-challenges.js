@@ -94,8 +94,8 @@
 
 
 
-const currentCohort = "Foxtrot 2022"
-console.log(currentCohort.split("").reverse().join(""))
+// const currentCohort = "Foxtrot 2022"
+// console.log(currentCohort.split("").reverse().join(""))
 
 // Expected output: "2202 tortxoF"
 //Result: 2202 tortxoF // It returned without "". Did I do somth wrong?
@@ -103,20 +103,40 @@ console.log(currentCohort.split("").reverse().join(""))
 // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
 // Describe your process:
+//To complete this task I will use a build-in-Method .lastIndexOf() 
+//I put givenValue1 in parentheses as an argument
+//lastly, I use console.log to check a result 
 
-const myNumbers = [13, 34, 42, 5, 5, 10, 27, 42, 10]
-const givenValue1 = 42
+// const myNumbers = [13, 34, 42, 5, 5, 10, 27, 42, 10]
+// const givenValue1 = 42
+
+// console.log(myNumbers.lastIndexOf(givenValue1))
 // Expected output: 7
+// Result: 7. As Expected
 
-const givenValue2 = 10
+///To complete this task I will use a build-in-Method .lastIndexOf() 
+//I put givenValue2 in parentheses as an argument
+//lastly, I use console.log to check a result 
+// const givenValue2 = 10
+// console.log(myNumbers.lastIndexOf(givenValue2))
+
 // Expected output: 8
+//Output: 8. As expected
 
 // --------------------5) Create the code that will sort all the numbers in an array from largest to smallest. Use the test variables provided below.
 
 // Describe your process:
+//to complete this task I will use array buit-in mutator method .sort()
+//In addition, I will use a function that defines a sort order (in our case - from highest to lowest) ((a,b) => b-a)
 
-const sanDiegoSummerTemperatures = [79, 80, 72, 73, 82, 77, 76]
+// const sanDiegoSummerTemperatures = [79, 80, 72, 73, 82, 77, 76]
+// sanDiegoSummerTemperatures.sort((a,b) => b-a)
+// console.log(sanDiegoSummerTemperatures)
 // Expected output: [82, 80, 79, 77, 76, 73, 72]
+//Output: as expected
 
 const sanDiegoWinterTemperatures = [59, 68, 62, 59, 66, 67, 66]
+sanDiegoWinterTemperatures.sort((a,b) => b-a)
+console.log(sanDiegoWinterTemperatures)
 // Expected output: [68, 67, 66, 66, 62, 59, 59]
+//Output: as expected
